@@ -1,34 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>React App - CDN</title>
-<!-- CDN for React -->
-<script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
-<!-- CDN for React DOM -->
-<script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
-<!-- CDN for Bebel -->
-<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
-</head>
-<body>
-<h1>React App Demo with CDN</h1>
-<div id="myContent">
-</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React App - CDN</title>
+    <!-- CDN for React -->
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <!-- CDN for React DOM -->
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <!-- CDN for Bebel -->
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+  </head>
+  <body>
+    <h1>React App Demo with CDN</h1>
+    <div id="myContent"></div>
 
-<!-- its compulsory to add type in script tag -->
-<script type="text/babel">
-function myAppFunc(){
-    const ninja=()=>alert('This is Alert..')
-return <button onclick={ninja} >Hello, World</button>
-}
-class ReactApp extends React.Component{
-render(){
-return <div>I'm Ali Sheraz <myAppFunc /></div>
-}
-}
-ReactDOM.render(<ReactApp />, document.getElementById('myContent'))
-</script>
-</body>
+    <!-- its compulsory to add type in script tag -->
+    <script type="text/babel">
+      function myAppFunc() {
+        const ninja = () => alert("This is Alert..");
+        return <button onclick={ninja}>Hello, World</button>;
+      }
+      class ReactApp extends React.Component {
+        render() {
+          return (
+            <div>
+              I'm Ali Sheraz <myAppFunc />
+            </div>
+          );
+        }
+      }
+      ReactDOM.render(<ReactApp />, document.getElementById("myContent"));
+    </script>
+  </body>
 </html>
